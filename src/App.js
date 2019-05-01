@@ -7,6 +7,7 @@ import Counter from './components/Counter'
 import ThreeSearchResults from './components/ThreeSearchResults'
 import Checkbox from './components/Checkbox'
 import CipherText from './components/CipherText'
+import Tabs from './components/Tabs'
 
 const text = 'Hell I just sent this from the app component';
 const colorObject = {
@@ -30,8 +31,8 @@ const steps = {
 function App() {
 
     return (
-
         <div>
+            <Tabs/>
             <CipherText transform={steps.three}/>
             <Checkbox/>
             <Counter/>
