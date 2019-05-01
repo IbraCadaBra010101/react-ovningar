@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53698ee2-2348-41ed-9103-b6d5d66c8163" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CipherText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CipherText.js" afterDir="false" />
-    </list>
+    <list default="true" id="53698ee2-2348-41ed-9103-b6d5d66c8163" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -89,11 +86,6 @@
             <path>
               <item name="ovningar-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="ovningar-react" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ovningar-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ovningar-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -145,20 +137,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556636316336</updated>
-      <workItem from="1556636319442" duration="27821000" />
+      <workItem from="1556636319442" duration="28122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27821000" />
+    <option name="totallyTimeSpent" value="28122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.119791664" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.328125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
