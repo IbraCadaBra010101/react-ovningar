@@ -27,12 +27,29 @@ const steps = {
     three: 3,
     four: 4,
 };
+const associatedPress = {
+    news: 'This is the news: some neeews.This is the news: some neeewsThis is the news: some neeews',
+    entertainment: 'Some celebrities did something.Some celebrities did something.Some celebrities did something',
+    sports: 'Man utd won or lost. we dont know.Man utd won or lost. we dont know.Man utd won or lost. we dont know.'
 
+};
+
+const bgColors = {
+    "Default": "#81b71a",
+    "Blue": "#00B1E1",
+    "Cyan": "#37BC9B",
+    "Green": "#8CC152",
+    "Red": "#E9573F",
+    "Yellow": "#F6BB42",
+}; // eslint-disable-next-line
 function App() {
-
     return (
         <div>
-            <Tabs/>
+            <Tabs>
+                <div>Passed from parent: {associatedPress.news}</div>
+                <div>Passed from parent: {associatedPress.sports}</div>
+                <div>Passed from parent: {associatedPress.entertainment}</div>
+            </Tabs>
             <CipherText transform={steps.three}/>
             <Checkbox/>
             <Counter/>

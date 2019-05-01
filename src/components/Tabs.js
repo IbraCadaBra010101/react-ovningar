@@ -1,17 +1,11 @@
 import React, {Component} from 'react';
 
 
-const associatedPress = {
-    news: 'This is the news: some neeews.This is the news: some neeewsThis is the news: some neeews',
-    entertainment: 'Some celebrities did something.Some celebrities did something.Some celebrities did something',
-    sports: 'Man utd won or lost. we dont know.Man utd won or lost. we dont know.Man utd won or lost. we dont know.'
-
-};
-
 class Tabs extends Component {
     state = {
         newsMode: 'newsMode'
     };
+
     bgColors = {
         "Default": "#81b71a",
         "Blue": "#00B1E1",
@@ -43,7 +37,7 @@ class Tabs extends Component {
                 <button onClick={this.sports}>sports</button>
                 <button onClick={this.entertainment}>entertainment</button>
 
-                <div>{associatedPress.news}</div>
+                <div>{this.props.children[0]}</div>
             </div>
 
         } else if (this.state.newsMode === 'sportsMode') {
@@ -52,7 +46,7 @@ class Tabs extends Component {
                 <button onClick={this.sports} style={{background: this.bgColors.Red}}>sports</button>
                 <button onClick={this.entertainment}>entertainment</button>
 
-                <div>{associatedPress.sports}</div>
+                <div>{this.props.children[1]}</div>
             </div>
         } else if (this.state.newsMode === 'entertainment') {
             return <div>
@@ -60,7 +54,7 @@ class Tabs extends Component {
                 <button onClick={this.sports}>sports</button>
                 <button onClick={this.entertainment} style={{background: this.bgColors.Red}}>entertainment</button>
 
-                <div>{associatedPress.entertainment}</div>
+                <div>{this.props.children[2]}</div>
             </div>
 
         }
