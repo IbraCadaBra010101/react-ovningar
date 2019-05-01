@@ -12,6 +12,14 @@ class Tabs extends Component {
     state = {
         newsMode: 'newsMode'
     };
+    bgColors = {
+        "Default": "#81b71a",
+        "Blue": "#00B1E1",
+        "Cyan": "#37BC9B",
+        "Green": "#8CC152",
+        "Red": "#E9573F",
+        "Yellow": "#F6BB42",
+    };
 
     news = () => {
         this.setState({newsMode: 'newsMode'})
@@ -31,7 +39,7 @@ class Tabs extends Component {
     render() {
         if (this.state.newsMode === 'newsMode') {
             return <div>
-                <button onClick={this.news}>news</button>
+                <button onClick={this.news} style={{background: this.bgColors.Red}}>news</button>
                 <button onClick={this.sports}>sports</button>
                 <button onClick={this.entertainment}>entertainment</button>
 
@@ -41,7 +49,7 @@ class Tabs extends Component {
         } else if (this.state.newsMode === 'sportsMode') {
             return <div>
                 <button onClick={this.news}>news</button>
-                <button onClick={this.sports}>sports</button>
+                <button onClick={this.sports} style={{background: this.bgColors.Red}}>sports</button>
                 <button onClick={this.entertainment}>entertainment</button>
 
                 <div>{associatedPress.sports}</div>
@@ -50,7 +58,7 @@ class Tabs extends Component {
             return <div>
                 <button onClick={this.news}>news</button>
                 <button onClick={this.sports}>sports</button>
-                <button onClick={this.entertainment}>entertainment</button>
+                <button onClick={this.entertainment} style={{background: this.bgColors.Red}}>entertainment</button>
 
                 <div>{associatedPress.entertainment}</div>
             </div>
