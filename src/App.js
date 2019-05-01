@@ -20,13 +20,19 @@ const googleRes = {
     link: 'www.google.com',
     title: 'is google google?'
 };
+const steps = {
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+};
 
 function App() {
 
     return (
 
         <div>
-            <CipherText transform={3}/>
+            <CipherText transform={steps.three}/>
             <Checkbox/>
             <Counter/>
             <OnOffButton/>
