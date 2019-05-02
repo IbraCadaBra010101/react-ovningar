@@ -10,7 +10,11 @@ import CipherText from './components/CipherText'
 import Tabs from './components/Tabs'
 import AjaxComponent from './components/AjaxComponent';
 import Fruits from './components/Fruits'
+import ShowCities from './components/ShowCities'
+import Cities from './components/Cities'
+import ShowCitiesListElements from './components/showCitiesListElements'
 const text = 'Hell I just sent this from the app component';
+
 const colorObject = {
     green: 'green',
     red: 'red',
@@ -43,10 +47,19 @@ const bgColors = {
     "Red": "#E9573F",
     "Yellow": "#F6BB42",
 }; // eslint-disable-next-line
+
+const citiesArray = [
+    {city: 'London', pop:8000000},
+    {city: 'Gotenburg', pop:700000},
+    {city: 'New York', pop:9000000},
+];
 function App() {
     return (
         <div>
-            <Fruits/>
+            <Cities/>
+            <ShowCitiesListElements/>
+
+             <Fruits/>
             <AjaxComponent/>
             <Tabs>
                 <div> {associatedPress.news}</div>
