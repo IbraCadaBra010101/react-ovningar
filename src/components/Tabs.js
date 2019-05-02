@@ -30,7 +30,7 @@ class Tabs extends Component {
 
     };
 
-    render() {
+    render() { //map the children
         if (this.state.newsMode === 'newsMode') {
             return <div>
                 <button onClick={this.news} style={{background: this.bgColors.Red}}>news</button>
@@ -64,13 +64,3 @@ class Tabs extends Component {
 export default Tabs;
 
 
-// 10a Skapa en komponent för att visa flikar. När man klickar på olika
-// flikar ska olika innehåll visas. Använd conditional rendering dvs.
-//     if-satser i render-metoden. Tips: spara vald flik som en variabel i state.
-
-
-// 10b Gör så att den valda fliken markeras med CSS.
-
-
-// 10c* Använd props.children för att kunna skicka det som ska visas i
-// respektive flik till komponenten. Exempel: <TabContainer> <div>first</div> <div>second</div> </TabContainer>

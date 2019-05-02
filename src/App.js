@@ -8,6 +8,7 @@ import ThreeSearchResults from './components/ThreeSearchResults'
 import Checkbox from './components/Checkbox'
 import CipherText from './components/CipherText'
 import Tabs from './components/Tabs'
+import AjaxComponent from './components/AjaxComponent';
 
 const text = 'Hell I just sent this from the app component';
 const colorObject = {
@@ -45,10 +46,11 @@ const bgColors = {
 function App() {
     return (
         <div>
+            <AjaxComponent/>
             <Tabs>
-                <div>Passed from parent: {associatedPress.news}</div>
-                <div>Passed from parent: {associatedPress.sports}</div>
-                <div>Passed from parent: {associatedPress.entertainment}</div>
+                <div> {associatedPress.news}</div>
+                <div> {associatedPress.sports}</div>
+                <div> {associatedPress.entertainment}</div>
             </Tabs>
             <CipherText transform={steps.three}/>
             <Checkbox/>
