@@ -40,7 +40,7 @@ class AjaxComponent extends Component {
             return <p>is loading ...</p>
         } else {
             return (
-              <li>{data.message}: {data.time}</li>
+                <li>{data.message}: {data.time}</li>
             );
         }
     }

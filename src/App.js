@@ -9,7 +9,7 @@ import Checkbox from './components/Checkbox'
 import CipherText from './components/CipherText'
 import Tabs from './components/Tabs'
 import AjaxComponent from './components/AjaxComponent';
-
+import Fruits from './components/Fruits'
 const text = 'Hell I just sent this from the app component';
 const colorObject = {
     green: 'green',
@@ -46,6 +46,7 @@ const bgColors = {
 function App() {
     return (
         <div>
+            <Fruits/>
             <AjaxComponent/>
             <Tabs>
                 <div> {associatedPress.news}</div>
